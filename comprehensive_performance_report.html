@@ -1,0 +1,401 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Trading Algorithm Performance Report</title>
+        <style>
+            body { font-family: Arial, sans-serif; margin: 20px; line-height: 1.6; }
+            table { border-collapse: collapse; width: 100%; margin-bottom: 20px; }
+            th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+            th { background-color: #f2f2f2; }
+            tr:nth-child(even) { background-color: #f9f9f9; }
+            h1, h2, h3 { color: #333; }
+            .container { max-width: 1200px; margin: 0 auto; }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Trading Algorithm Performance Report</h1>
+<p><strong>Generated:</strong> 2025-04-06 16:06:48
+<strong>Data Period:</strong> 2024-07-02 to 2025-03-16 (607 days)</p>
+<h2>1. Overall Performance Metrics</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Starting Value</td>
+<td>$1.00</td>
+</tr>
+<tr>
+<td>Final Value</td>
+<td>$12.20</td>
+</tr>
+<tr>
+<td>Total Return</td>
+<td>1119.50%</td>
+</tr>
+<tr>
+<td>Annualized Return</td>
+<td>349.93%</td>
+</tr>
+<tr>
+<td>Annualized Volatility</td>
+<td>155.55%</td>
+</tr>
+<tr>
+<td>Sharpe Ratio</td>
+<td>2.2496</td>
+</tr>
+<tr>
+<td>Maximum Drawdown</td>
+<td>-48.18%</td>
+</tr>
+</tbody>
+</table>
+<h2>2. Signal Analysis</h2>
+<table>
+<thead>
+<tr>
+<th>Signal Type</th>
+<th>Count</th>
+<th>Percentage</th>
+<th>Win Rate</th>
+<th>Average Return</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buy Signals</td>
+<td>304</td>
+<td>50.1%</td>
+<td>61.8%</td>
+<td>2.0260%</td>
+</tr>
+<tr>
+<td>Sell/Hold Signals</td>
+<td>303</td>
+<td>49.9%</td>
+<td>53.8%</td>
+<td>-1.1576%</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Profit Factor:</strong> 2.3184</p>
+<p><strong>Average Win/Loss Ratio:</strong> 1.4305</p>
+<h2>3. Market Regime Performance</h2>
+<h3>Low Vol / Uptrend</h3>
+<ul>
+<li><strong>Days:</strong> 200 (32.9% of total)</li>
+<li><strong>Buy Signals:</strong> 108 (54.0% of regime days)</li>
+<li><strong>Market Return:</strong> 1.4152%</li>
+<li><strong>Strategy Return:</strong> 2.3959%</li>
+<li><strong>Win Rate:</strong> 62.0%</li>
+<li><strong>Outperformance:</strong> 0.9807%</li>
+</ul>
+<h3>Low Vol / Downtrend</h3>
+<ul>
+<li><strong>Days:</strong> 101 (16.6% of total)</li>
+<li><strong>Buy Signals:</strong> 43 (42.6% of regime days)</li>
+<li><strong>Market Return:</strong> -1.1964%</li>
+<li><strong>Strategy Return:</strong> -1.4538%</li>
+<li><strong>Win Rate:</strong> 41.9%</li>
+<li><strong>Outperformance:</strong> -0.2574%</li>
+</ul>
+<h3>High Vol / Uptrend</h3>
+<ul>
+<li><strong>Days:</strong> 167 (27.5% of total)</li>
+<li><strong>Buy Signals:</strong> 85 (50.9% of regime days)</li>
+<li><strong>Market Return:</strong> 2.3765%</li>
+<li><strong>Strategy Return:</strong> 3.6788%</li>
+<li><strong>Win Rate:</strong> 64.7%</li>
+<li><strong>Outperformance:</strong> 1.3023%</li>
+</ul>
+<h3>High Vol / Downtrend</h3>
+<ul>
+<li><strong>Days:</strong> 130 (21.4% of total)</li>
+<li><strong>Buy Signals:</strong> 59 (45.4% of regime days)</li>
+<li><strong>Market Return:</strong> -2.2565%</li>
+<li><strong>Strategy Return:</strong> 1.8228%</li>
+<li><strong>Win Rate:</strong> 71.2%</li>
+<li><strong>Outperformance:</strong> 4.0793%</li>
+</ul>
+<h2>4. Signal Stability</h2>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Buy-to-Sell Transitions</td>
+<td>32</td>
+</tr>
+<tr>
+<td>Sell-to-Buy Transitions</td>
+<td>31</td>
+</tr>
+<tr>
+<td>Avg Buy Signal Duration</td>
+<td>9.50 days</td>
+</tr>
+<tr>
+<td>Avg Sell/Hold Signal Duration</td>
+<td>9.47 days</td>
+</tr>
+</tbody>
+</table>
+<h3>Quick Signal Reversals (Buy→Sell→Buy)</h3>
+<ul>
+<li><strong>Within 1 days:</strong> 4 (12.5% of all buy-to-sell transitions)</li>
+<li><strong>Within 2 days:</strong> 6 (18.8% of all buy-to-sell transitions)</li>
+<li><strong>Within 3 days:</strong> 8 (25.0% of all buy-to-sell transitions)</li>
+<li><strong>Within 5 days:</strong> 13 (40.6% of all buy-to-sell transitions)</li>
+<li><strong>Within 7 days:</strong> 13 (40.6% of all buy-to-sell transitions)</li>
+<li><strong>Within 10 days:</strong> 16 (50.0% of all buy-to-sell transitions)</li>
+</ul>
+<h2>5. Monthly Performance</h2>
+<table>
+<thead>
+<tr>
+<th>Month</th>
+<th>Market Return</th>
+<th>Strategy Return</th>
+<th>Win Rate</th>
+<th>Outperformance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Jul 2024</td>
+<td>0.01%</td>
+<td>0.01%</td>
+<td>62.1%</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>Aug 2024</td>
+<td>0.15%</td>
+<td>0.15%</td>
+<td>55.2%</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>Sep 2024</td>
+<td>0.26%</td>
+<td>0.41%</td>
+<td>50.0%</td>
+<td>0.14%</td>
+</tr>
+<tr>
+<td>Oct 2024</td>
+<td>-0.30%</td>
+<td>1.44%</td>
+<td>65.3%</td>
+<td>1.74%</td>
+</tr>
+<tr>
+<td>Nov 2024</td>
+<td>-0.06%</td>
+<td>2.11%</td>
+<td>63.6%</td>
+<td>2.17%</td>
+</tr>
+<tr>
+<td>Dec 2024</td>
+<td>1.23%</td>
+<td>1.51%</td>
+<td>50.0%</td>
+<td>0.28%</td>
+</tr>
+<tr>
+<td>Jan 2025</td>
+<td>0.46%</td>
+<td>3.37%</td>
+<td>71.4%</td>
+<td>2.90%</td>
+</tr>
+<tr>
+<td>Feb 2025</td>
+<td>1.31%</td>
+<td>9.34%</td>
+<td>80.8%</td>
+<td>8.03%</td>
+</tr>
+<tr>
+<td>Mar 2025</td>
+<td>-1.02%</td>
+<td>0.30%</td>
+<td>40.0%</td>
+<td>1.33%</td>
+</tr>
+</tbody>
+</table>
+<h2>6. Day of Week Performance</h2>
+<table>
+<thead>
+<tr>
+<th>Day</th>
+<th>Market Return</th>
+<th>Strategy Return</th>
+<th>Win Rate</th>
+<th>Outperformance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Monday</td>
+<td>-0.15%</td>
+<td>1.87%</td>
+<td>63.3%</td>
+<td>2.02%</td>
+</tr>
+<tr>
+<td>Tuesday</td>
+<td>1.86%</td>
+<td>1.86%</td>
+<td>62.7%</td>
+<td>0.00%</td>
+</tr>
+<tr>
+<td>Wednesday</td>
+<td>1.95%</td>
+<td>2.42%</td>
+<td>60.4%</td>
+<td>0.46%</td>
+</tr>
+<tr>
+<td>Thursday</td>
+<td>-1.78%</td>
+<td>0.68%</td>
+<td>58.1%</td>
+<td>2.46%</td>
+</tr>
+<tr>
+<td>Friday</td>
+<td>1.10%</td>
+<td>0.55%</td>
+<td>53.3%</td>
+<td>-0.55%</td>
+</tr>
+<tr>
+<td>Saturday</td>
+<td>0.51%</td>
+<td>5.31%</td>
+<td>73.5%</td>
+<td>4.80%</td>
+</tr>
+<tr>
+<td>Sunday</td>
+<td>-0.37%</td>
+<td>1.24%</td>
+<td>58.6%</td>
+<td>1.60%</td>
+</tr>
+</tbody>
+</table>
+<h2>7. Significant Drawdown Periods</h2>
+<table>
+<thead>
+<tr>
+<th>Period</th>
+<th>Duration</th>
+<th>Max Drawdown</th>
+<th>Most Common Regime</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2024-07-10 to 2024-07-11</td>
+<td>1 days</td>
+<td>-10.43%</td>
+<td>Low Vol / Uptrend (50.0%)</td>
+</tr>
+<tr>
+<td>2024-08-01 to 2024-10-29</td>
+<td>89 days</td>
+<td>-48.18%</td>
+<td>Low Vol / Uptrend (51.1%)</td>
+</tr>
+<tr>
+<td>2024-11-12 to 2024-11-21</td>
+<td>9 days</td>
+<td>-19.44%</td>
+<td>High Vol / Uptrend (58.1%)</td>
+</tr>
+<tr>
+<td>2024-11-30 to 2024-12-02</td>
+<td>2 days</td>
+<td>-11.78%</td>
+<td>High Vol / Downtrend (100.0%)</td>
+</tr>
+<tr>
+<td>2024-12-03 to 2024-12-25</td>
+<td>22 days</td>
+<td>-21.65%</td>
+<td>Low Vol / Uptrend (44.7%)</td>
+</tr>
+<tr>
+<td>2025-01-25 to 2025-01-28</td>
+<td>3 days</td>
+<td>-14.54%</td>
+<td>High Vol / Uptrend (53.3%)</td>
+</tr>
+<tr>
+<td>2025-03-05 to 2025-03-09</td>
+<td>4 days</td>
+<td>-10.68%</td>
+<td>High Vol / Uptrend (60.0%)</td>
+</tr>
+<tr>
+<td>2025-03-11 to 2025-03-16</td>
+<td>5 days</td>
+<td>-34.93%</td>
+<td>High Vol / Downtrend (100.0%)</td>
+</tr>
+</tbody>
+</table>
+<h2>8. Key Findings and Recommendations</h2>
+<ol>
+<li>
+<p><strong>Overall Performance</strong>: The algorithm has demonstrated strong overall performance with a significant total return and positive Sharpe ratio, indicating good risk-adjusted returns.</p>
+</li>
+<li>
+<p><strong>Market Regime Analysis</strong>: </p>
+</li>
+<li>The strategy performs best in high volatility downtrend environments, showing exceptional outperformance.</li>
+<li>
+<p>It struggles most in low volatility downtrend environments, which is the only regime where it underperforms the market.</p>
+</li>
+<li>
+<p><strong>Signal Stability</strong>: </p>
+</li>
+<li>The algorithm tends to maintain signals for reasonable periods, with buy signals lasting longer on average than sell signals.</li>
+<li>
+<p>There are some quick reversals in signals, which could potentially be filtered to reduce transaction costs.</p>
+</li>
+<li>
+<p><strong>Seasonality</strong>: </p>
+</li>
+<li>Monthly performance shows strong results in some months and weaker results in others, suggesting potential seasonal patterns.</li>
+<li>
+<p>Day of week analysis reveals certain days consistently outperform others.</p>
+</li>
+<li>
+<p><strong>Recommendations</strong>:</p>
+</li>
+<li>Consider implementing a signal filter to prevent quick reversals and reduce potential transaction costs.</li>
+<li>Potentially adjust position sizing based on market regimes, increasing exposure in high volatility downtrends and decreasing in low volatility downtrends.</li>
+<li>Further investigate seasonal patterns to potentially optimize entry/exit timing.</li>
+<li>Monitor drawdown periods closely, as they tend to occur most frequently in specific market regimes.</li>
+</ol>
+        </div>
+    </body>
+    </html>
+    
